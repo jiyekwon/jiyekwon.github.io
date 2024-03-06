@@ -16,7 +16,7 @@
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
-$primary: #0a0a0a;
+$primary: #17e517;
 $secondary: #FF7B7B;
 
 %opensans { font-family: 'Open Sans', sans-serif; }
@@ -33,7 +33,7 @@ $secondary: #FF7B7B;
 }
 
 body {
-  background-color: #e9edf0;
+  background-color: #faf0e6; // @Jiye background color of full site default #e9edf0
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -55,7 +55,7 @@ p {
 a {
   @include transition(color .2s ease-in-out);
   &:hover {
-    color: #FF5B33;
+    color: #FF5B33; // @Jiye hover color of the down arrow default #FF5B33
     text-decoration: none;
   }
 }
@@ -88,9 +88,9 @@ button.btn, input.btn {
 }
 
 .main {
-  background-color: white;
-  border-left: solid 1px #cedfea;
-  border-right: solid 1px #cedfea;
+  background-color: #e7eff6; // @Jiye main background color default white
+  border-left: solid 1px #63ace5; // @Jiye side border color (very thin) default cedfea
+  border-right: solid 1px #63ace5; // ditto this for the other side
   &.container {
     padding: 0;
   }
@@ -99,7 +99,7 @@ button.btn, input.btn {
 .section-jump {
   position: relative;
   top: 0;
-  color: #C8D7E1;
+  color: #adcbe3; // @Jiye color of the little down arrow default #C8D7E1
   margin: 0 auto;
   display: table;
   @include transition(top .2s ease-in);
@@ -323,7 +323,7 @@ button.btn, input.btn {
 .site-footer {
   font-size: 14px;
   margin-top: 2em;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #63ace5; //@Jiye thin line that separates the footer default #efefef
   padding: 1em 0;
   p {
     font-size: 12px;
